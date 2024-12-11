@@ -13,19 +13,6 @@ jobs:
         with:
           submodules: true
           lfs: false
-
-      - name: Configurar .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
-
-      - name: Restaurar Dependências
-        run: dotnet restore
-
-      - name: Atualizar Banco de Dados
-        run: |
-          echo "Executando migração do banco de dados..."
-          dotnet ef database update --project ./backend/TrabalhoFinalBackend
           
       - name: Build And Deploy
         id: builddeploy
