@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <nav>
-        <router-link to="/">Home</router-link>
+        <router-link to="/">HomeAlteradaMain</router-link>
         <!-- <router-link to="/about">About</router-link> -->
       </nav>
     </header>
