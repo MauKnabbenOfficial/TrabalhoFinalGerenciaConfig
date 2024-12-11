@@ -19,6 +19,14 @@ jobs:
         with:
           submodules: true
           lfs: false
+          
+      - name: Atualizar Banco de Dados
+        run: |
+          echo "Executando migração do banco de dados..."
+          # Comandos para rodar migrações no banco de dados
+          # Exemplo para .NET:
+          # dotnet ef database update --project ./backend/TrabalhoFinalBackend
+          
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
