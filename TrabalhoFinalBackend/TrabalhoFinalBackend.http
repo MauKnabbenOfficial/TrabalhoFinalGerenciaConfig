@@ -1,0 +1,6 @@
+@TrabalhoFinalBackend_HostAddress = http://localhost:5072
+
+GET {{TrabalhoFinalBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
